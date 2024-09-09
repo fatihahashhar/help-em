@@ -16,6 +16,15 @@ Help'em is a comprehensive web-based platform designed to connect volunteers wit
 - **Database**: MySQL
 - **Development Tools**: Visual Studio Code
 
+---
+
+## Screenshots
+
+### Homepage
+![Homepage](images/homepage-image.png)
+
+---
+
 ## Installation
 1. **Clone the Repository**:
     ```bash
