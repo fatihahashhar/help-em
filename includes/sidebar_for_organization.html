@@ -1,0 +1,42 @@
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar bg-white">
+  <div>
+    <div style="margin-left: 60px; margin-top: -50px">
+      <a class="navbar-brand me-2 mt-1" href="view_voluntary_work_list_organization.php">
+        <img
+          src="logo.png"
+          height="120"
+          alt="Help\'em Logo"
+          loading="lazy"
+          style="margin-top: -1px"
+        />
+      </a>
+    </div>
+    <div class="list-group list-group-flush mx-2 mt-2">
+      <a href="view_voluntary_work_list_organization.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'view_voluntary_work_list_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'edit_details_voluntary_work_organization.php' || basename($_SERVER['PHP_SELF']) == 'delete_voluntary_work_organization.php') echo 'active'; ?>">
+        <i class="fas fa-briefcase fa-fw me-2"></i><span>Active Voluntary Work</span>
+      </a>
+      <a href="add_voluntary_work_organization.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'add_voluntary_work_organization.php') echo 'active'; ?>">
+        <i class="fas fa-plus fa-fw me-2"></i><span>Add Voluntary Work</span>
+      </a>
+      <a href="view_applications_pending_organization.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'view_applications_pending_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'view_applicants_details_pending_organization.php' || basename($_SERVER['PHP_SELF']) == 'approve_volunteer_application_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'reject_volunteer_application_organization.php') echo 'active'; ?>">
+        <i class="fas fa-hourglass fa-fw me-2"></i><span>Pending Application</span>
+      </a>
+      <a href="view_applications_approved_organization.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'view_applications_approved_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'view_applicants_details_approved_organization.php') echo 'active'; ?>">
+        <i class="fa-solid fa-check me-2"></i><span>Approved Application</span>
+      </a>
+      <a href="participation_update_organization.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'participation_update_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'view_applicants_details_participation_update_organization.php' || basename($_SERVER['PHP_SELF']) == 'participation_update_participate_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'participation_update_absent_organization.php' || basename($_SERVER['PHP_SELF']) == 'participation_update_completed_organization.php') echo 'active'; ?>">
+        <i class="fa-solid fa-clipboard-user me-2"></i><span>Participation Update</span>
+      </a>
+      <a href="view_past_voluntary_work_list_organization.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'view_past_voluntary_work_list_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'view_past_voluntary_work_details_organization.php') echo 'active'; ?>">
+        <i class="fa-solid fa-clock-rotate-left me-2"></i><span>Past Work</span>
+      </a>
+    </div>
+  </div>
+</nav>

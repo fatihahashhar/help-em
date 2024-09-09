@@ -1,0 +1,29 @@
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar bg-white">
+  <div>
+    <div style="margin-left: 60px; margin-top: -50px">
+      <a class="navbar-brand me-2 mt-1" href="view_list_institution.php">
+        <img
+          src="logo.png"
+          height="120"
+          alt="Help\'em Logo"
+          loading="lazy"
+          style="margin-top: -1px"
+        />
+      </a>
+    </div>
+    <div class="list-group list-group-flush mx-2 mt-2">
+      <a href="view_list_institution.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'view_list_institution.php' || 
+      basename($_SERVER['PHP_SELF']) == 'view_details_institution.php' || basename($_SERVER['PHP_SELF']) == 'delete_institution.php') echo 'active'; ?>">
+        <i class="fas fa-graduation-cap fa-fw me-3"></i><span>Institution </span>
+      </a>
+      <a href="view_list_organization.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'view_list_organization.php' || 
+      basename($_SERVER['PHP_SELF']) == 'view_details_organization.php' || basename($_SERVER['PHP_SELF']) == 'delete_organization.php') echo 'active'; ?>">
+        <i class="fas fa-building fa-fw me-3"></i><span>Organization</span>
+      </a>
+      <a href="view_list_volunteer.php" class="list-group-item list-group-item-action py-2 ripple <?php if (basename($_SERVER['PHP_SELF']) == 'view_list_volunteer.php' || 
+      basename($_SERVER['PHP_SELF']) == 'view_details_volunteer.php' || basename($_SERVER['PHP_SELF']) == 'delete_volunteer.php') echo 'active'; ?>">
+        <i class="fas fa-hands-helping fa-fw me-3"></i><span>Volunteer</span>
+      </a>
+    </div>
+  </div>
+</nav>
